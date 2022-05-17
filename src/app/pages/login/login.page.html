@@ -5,27 +5,27 @@
 </ion-header>
 -->
 <ion-content>
-<div class="flex-center">
-  <ion-card>
-    <ion-card-header>
-      <ion-card-title color="warning">Vulthanos</ion-card-title>
-    </ion-card-header>
+  <div class="flex-center">
+    <form [formGroup]="form">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title color="warning">Vulthanos</ion-card-title>
+        </ion-card-header>
 
-    <ion-card-content>
-      <ion-item>
-        <ion-label position="floating">Email</ion-label>
-        <ion-input type="email"></ion-input>
-      </ion-item>
-      <ion-item>
-        <ion-label position="floating">Password</ion-label>
-        <ion-input type="password"></ion-input>
-      </ion-item>
-      <ion-button color="dark" fill="clear" size="full">Forgot email/password</ion-button>
-
-      <ion-button color="warning" size="full">Login</ion-button>
-      <ion-button color="warning" fill="clear" size="full">Register</ion-button>
-    </ion-card-content>
-  </ion-card>
-
-</div>
+        <ion-card-content>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+          <ion-button color="dark" fill="clear" size="full">Forgot email/password</ion-button>
+          <ion-button color="warning" size="full" (click)="login()">Login</ion-button>
+          <ion-button color="warning" fill="clear" size="full" (click)="register()">Register</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </form>
+  </div>
 </ion-content>
