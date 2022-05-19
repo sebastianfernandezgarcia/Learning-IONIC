@@ -3,9 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  firebaseConfig: {
+    apiKey: 'AIzaSyAOs5F1izcHbBhvDIZf_-SjG6rHkegt9dQ',
+    authDomain: 'vulthanosangular.firebaseapp.com',
+    projectId: 'vulthanosangular',
+    storageBucket: 'vulthanosangular.appspot.com',
+    messagingSenderId: '1083165440814',
+    appId: '1:1083165440814:web:3f9b27d670e2247e30d8bf'
+  },
   production: false
 };
-
 /*
  * For easier debugging in development mode, you can import the following file
  * to ignore zone related error stack frames such as `zone.run`, `zoneDelegate.invokeTask`.
